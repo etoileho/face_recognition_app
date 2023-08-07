@@ -10,10 +10,10 @@ known_face_encodings = []
 known_face_names = []
 
 # 新しい顔データの名前を入力
-new_face_name = st.text_input("覚えさせる名前を入力してください")
+new_face_name = st.sidebar.text_input("覚えさせる名前を入力してください")
 
 # 新しい顔の画像ファイルをアップロード
-uploaded = st.file_uploader("認証を許可する画像ファイルをアップロードしてください", type=['jpg', 'jpeg', 'png'])
+uploaded = st.sidebar.file_uploader("認証を許可する画像ファイルをアップロードしてください", type=['jpg', 'jpeg', 'png'])
 if uploaded:
     # 画像ファイルを保存
     new_face_path = f"{new_face_name}.jpg"
