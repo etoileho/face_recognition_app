@@ -1,0 +1,5 @@
+streamlit==1.2.0
+numpy==1.22.3
+face_recognition==1.2.3
+Pillow
+pyngrok==4.1.1
